@@ -28,7 +28,7 @@
 				"name": "manager",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "",
 						"type": "address"
 					}
@@ -107,7 +107,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lottery.sol": "Lottery"
+			"Lottery/Lottery.sol": "Lottery"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -121,12 +121,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Lottery.sol": {
-			"keccak256": "0xfd9e3e62cfa4f18059f34299599fdfcc55970218f0b7e12071264f2e5c0c8bcf",
+		"Lottery/Lottery.sol": {
+			"keccak256": "0x78f20979ad82b547d7604af4c77a44d2fa994685ba673d5b57b436cc0d91b116",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f1998eb61612a5d5ea7375f1631553d7e03cf06044724191b1f93c8d0f6bd274",
-				"dweb:/ipfs/QmThShHjbTQQ8NyqvPwCsqE4HyHFryH59yPxBUFzkxDyho"
+				"bzz-raw://50dcc58119238eadd086a91f897a88ae29b8392a88d50cdfeac6e5dad965d6fd",
+				"dweb:/ipfs/QmTiJ3hBQcsJULzdDa2Nrb93hbh8feBMuRmbXXCGRtsT2t"
 			]
 		}
 	},

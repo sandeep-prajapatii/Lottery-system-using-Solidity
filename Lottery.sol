@@ -5,11 +5,11 @@ pragma solidity >=0.5.0 <=0.9.0;
 
 contract Lottery{
 ///@notice  Who manages the game here or starts the game is manager
-    address public manager;
+    address payable public manager;
     address payable[] public participants;
 
     constructor(){
-        manager = msg.sender;
+        manager = payable(msg.sender);
     }
 
 ///@notice recieve function is to get the initial amount to get part in the game
@@ -35,6 +35,9 @@ contract Lottery{
         require(msg.sender == manager, "Only Manager can start  the game");
         require(participants.length >=3, "Participants are less than three"); 
         uint r = uint(random());
+        
+///@notice Everytime the game ends the manager gets the 2% of the total balance
+        manager.transfer(getBalance()/100*2);
         uint index = r % participants.length;
         address payable winner;
         winner = participants[index];
